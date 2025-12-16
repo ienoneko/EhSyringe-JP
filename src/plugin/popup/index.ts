@@ -89,7 +89,7 @@ export class Popup {
     }
 
     async checkVersion(): Promise<void> {
-        this.state.versionInfo = '检查中...';
+        this.state.versionInfo = '取得中...';
 
         const currentSha = await this.messaging.emit('get-tag-sha', undefined);
         const updateTime = (await this.storage.get('databaseInfo'))?.check;
