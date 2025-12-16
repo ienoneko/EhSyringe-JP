@@ -256,7 +256,7 @@ export class Popup {
         return html`
             <div id="ehs-setting-panel" class="ehs-panel ${state.showSettingPanel ? 'ehs-show' : ''}">
                 <div class="header">
-                    <div>设置</div>
+                    <div>オプション</div>
                     <div class="cushion"></div>
                     <div>
                         <a
@@ -389,7 +389,7 @@ export class Popup {
                             state.showSettingPanel = true;
                             ev.preventDefault();
                         }}"
-                        >设置</a
+                        >オプション</a
                     >
                 </div>
             </div>
