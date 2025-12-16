@@ -245,13 +245,13 @@ export class Popup {
         const state = this.state;
 
         const checkboxList: Array<{ key: keyof ConfigData; name: string }> = [
-            { key: 'translateUi', name: '翻译界面' },
-            { key: 'translateTag', name: '翻译标签' },
-            { key: 'translateTimestamp', name: '翻译时间戳' },
-            { key: 'showIntroduce', name: '标签介绍' },
-            { key: 'showIcon', name: '显示标签图标' },
-            { key: 'tagTip', name: '搜索提示' },
-            { key: 'autoUpdate', name: '自动更新' },
+            { key: 'translateUi', name: 'インタフェース翻訳' },
+            { key: 'translateTag', name: 'タグを翻訳する' },
+            { key: 'translateTimestamp', name: '日付・時刻などを翻訳する' },
+            { key: 'showIntroduce', name: 'クリック時、タグの詳細を表示する' },
+            { key: 'showIcon', name: '一部のタグにアイコンを表示する' },
+            { key: 'tagTip', name: '検索候補を有効化する' },
+            { key: 'autoUpdate', name: 'データベースを自動的に更新' },
         ];
         return html`
             <div id="ehs-setting-panel" class="ehs-panel ${state.showSettingPanel ? 'ehs-show' : ''}">
