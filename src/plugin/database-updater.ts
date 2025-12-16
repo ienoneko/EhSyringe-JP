@@ -115,7 +115,7 @@ export class DatabaseUpdater {
             this.badge.set('OK', '#00C801');
             this.pushDownloadStatus({
                 run: true,
-                info: '更新完成',
+                info: '更新しました',
                 progress: 100,
                 complete: true,
             });
