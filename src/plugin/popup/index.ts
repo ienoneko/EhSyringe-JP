@@ -102,9 +102,9 @@ export class Popup {
             const hasNewData = (this.state.updateAvailable = !currentSha.startsWith(data.sha));
             if (hasNewData) {
                 this.state.newSha = data.sha.slice(0, 7);
-                this.state.versionInfo = `有更新！`;
+                this.state.versionInfo = '利用可能';
             } else {
-                this.state.versionInfo = '已是最新版本';
+                this.state.versionInfo = '既に最新バージョン';
             }
         } catch (ex) {
             this.logger.error('获取失败', ex);
@@ -407,7 +407,7 @@ export class Popup {
                 </div>
                 <table>
                     <tr>
-                        <th>标签版本：</th>
+                        <th>バージョン：</th>
                         <td>
                             <a href="https://github.com/EhTagTranslation/Database/tree/${state.sha}" class="monospace"
                                 >${state.sha || ' --- '}</a
@@ -415,13 +415,13 @@ export class Popup {
                         </td>
                     </tr>
                     <tr>
-                        <th>上次更新：</th>
+                        <th>更新時日：</th>
                         <td>
                             <span>${state.updateTime || ' --- '}</span>
                         </td>
                     </tr>
                     <tr>
-                        <th>更新检查：</th>
+                        <th>更新確認：</th>
                         <td>
                             <span class="${state.updateAvailable ? 'hasNew' : ''}">
                                 ${state.versionInfo}
@@ -442,7 +442,7 @@ export class Popup {
                 class="action ${state.updateAvailable ? 'primary' : ''}"
                 id="updateButton"
             >
-                更新
+                データベース更新
             </button>
         </div>`;
     }
