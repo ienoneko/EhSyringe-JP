@@ -218,7 +218,7 @@ class TagNodeRef {
             else value = `${this.service.tagging.ns(originalNs)}:${value}`;
         }
         this.node.innerHTML = value;
-        this.node.setAttribute('lang', 'zh-hans');
+        this.node.setAttribute('lang', 'ja');
         return true;
     }
 }
