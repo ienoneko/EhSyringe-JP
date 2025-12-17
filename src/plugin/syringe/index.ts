@@ -392,7 +392,7 @@ export class Syringe {
             node.classList.add('ehs-translate-tag');
         }
         if (this.config.translateUi) {
-            node.setAttribute('lang', 'zh-hans');
+            node.setAttribute('lang', 'ja');
         } else {
             node.setAttribute('lang', 'en');
         }

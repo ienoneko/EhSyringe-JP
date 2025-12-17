@@ -4,9 +4,9 @@ merge(
     /^\/watched/,
     undefined,
     {
-        'Watched Tag Galleries': '关注的标签',
+        'Watched Tag Galleries': '登録中タグの新着ギャラリー',
         'You do not have any watched tags. You can change your watched tags from ':
-            '您还没有关注任何标签。可在此处修改关注的标签：',
+            '登録タグはありません。こちらで追加することができます：',
     },
-    [[/^Showing results for ([\d,]+) watched tags?$/, '关注的 $1 个标签的结果']],
+    [[/^Showing results for ([\d,]+) watched tags?$/, '$1 個の登録タグの結果を表示しています']],
 );

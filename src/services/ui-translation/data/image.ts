@@ -15,7 +15,7 @@ merge(
         'Align Center, Scale To Fit': '居中对齐，始终缩放图像以适应浏览器宽度',
         'Show Thumbnail Pane': '显示缩略图侧栏',
         'Hide Thumbnail Pane': '隐藏缩略图侧栏',
-        'Reload broken image': '重新加载图像',
+        'Reload broken image': '画像を再読込',
         'Open image in normal viewer': '在普通查看器中打开图像',
         'Show galleries with this image': '显示所有包含此图像的图库',
         'Get forum link to image': '生成用于论坛的图像链接',

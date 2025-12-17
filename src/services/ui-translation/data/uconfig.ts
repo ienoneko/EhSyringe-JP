@@ -44,11 +44,11 @@ merge(
         'Vertical:': '高/纵向',
         ' pixels': ' px',
 
-        'Gallery Name Display': '图库显示名称',
+        'Gallery Name Display': 'ギャラリー表示名',
         'Many galleries have both an English/Romanized title and a title in Japanese script. Which gallery name would you like as default?':
-            '许多图库都同时拥有英文/罗马音标题和日文标题，您希望默认显示哪一个？',
-        ' Default Title': ' 默认标题 (英文/罗马音)',
-        ' Japanese Title (if available)': ' 日文标题 (如果有)',
+            '多くのギャラリーは英語／ローマ字で書かれたタイトルや本来の日本語タイトル両方があります。そのどちらを表示に使用します。',
+        ' Default Title': ' デフォルト（英語／ローマ字）',
+        ' Japanese Title (if available)': ' 日本語タイトル（可能であれば）',
 
         'Archiver Settings': '归档设置',
         'The default behavior for the Archiver is to confirm the cost and selection for original or resampled archive, then present a link that can be clicked or copied elsewhere. You can change this behavior here.':
@@ -60,9 +60,9 @@ merge(
         ' Auto Select Resample, Manual Start': ' 自动选择重采样画质，手动下载',
         ' Auto Select Resample, Auto Start': ' 自动选择重采样画质，自动下载',
 
-        'Front Page / Search Settings': '首页 / 搜索设置',
+        'Front Page / Search Settings': '検索カテゴリー',
         'What categories would you like to show by default on the front page and in searches?':
-            '您希望首页和搜索页面默认显示哪些类别？',
+            '検索をする時に、これらのカテゴリーに相応するギャラリーを表示します：',
 
         'Which display mode would you like to use on the front and search pages?':
             '您希望首页和搜索页面使用哪种显示模式？',
@@ -131,32 +131,32 @@ merge(
         ' Yes': ' 是',
         ' No': ' 否',
 
-        'Excluded Languages': '排除语言',
+        'Excluded Languages': '除外するギャラリー言語',
         'If you wish to hide galleries in certain languages from the gallery list and searches, select them from the list below.':
-            '如果您希望在图库列表和搜索结果中隐藏某些语言的图库，请从下面的列表中选择它们。',
+            '次のリストで選択されたギャラリー言語を検索結果から除外します。',
         'Note that matching galleries will never appear regardless of your search query.':
-            '请注意，无论搜索查询如何，匹配的图库都不会出现。',
-        Original: '原始',
-        Translated: '翻译',
-        Rewrite: '改写',
-        All: '所有',
-        Japanese: '日语',
-        English: '英语',
-        Chinese: '汉语',
+            '相応したギャラリーは検索キーワードをどう変えても表示されないためご注意してください。',
+        Original: '元の言語',
+        Translated: '翻訳',
+        Rewrite: '二次創作',
+        All: '一括設定',
+        Japanese: '日本語',
+        English: '英語',
+        Chinese: '中国語',
         Dutch: '荷兰语',
-        French: '法语',
-        German: '德语',
+        French: 'フランス語',
+        German: 'ドイツ語',
         Hungarian: '匈牙利语',
         Italian: '意大利语',
-        Korean: '韩语',
+        Korean: '韓国語',
         Polish: '波兰语',
         Portuguese: '葡萄牙语',
-        Russian: '俄语',
+        Russian: 'ロシア語',
         Spanish: '西班牙语',
-        Thai: '泰语',
-        Vietnamese: '越南语',
-        'N/A': '无语言',
-        Other: '其他',
+        Thai: 'タイ語',
+        Vietnamese: 'ベトナム語',
+        'N/A': '指定なし',
+        Other: 'その他',
 
         'Excluded Uploaders': '排除上传者',
         'If you wish to hide galleries from certain uploaders from the gallery list and searches, add them below. Put one username per line.':
@@ -205,8 +205,8 @@ merge(
         ' Show': ' 显示',
         ' Hide': ' 隐藏',
 
-        Apply: '应用',
-        'Settings were updated': '设置更新完毕',
+        Apply: '適用',
+        'Settings were updated': '設定内容を適用しました',
     },
     [[/ \(Default\)$/, ' (默认)']],
 );
