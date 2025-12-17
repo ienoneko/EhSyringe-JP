@@ -95,7 +95,7 @@ export class TagDatabase {
                 introSearch: '',
             };
             if (tag.intro) {
-                ehTag.intro = tag.intro;
+                ehTag.intro = kanjiFixup(tag.intro);
                 ehTag.introSearch += '\0' + this.tagging.removeHtmlTags(tag.intro).toLowerCase();
             }
             if (tag.links) {
