@@ -6,6 +6,7 @@ import { Messaging } from 'services/messaging';
 import { Tagging } from 'services/tagging';
 import { BehaviorSubject, firstValueFrom, Observable } from 'rxjs';
 import { map, filter } from 'rxjs/operators';
+import { kanjiFixup } from 'ja-supp/轉字';
 
 /* 数据存储结构版本, 如果不同 系统会自动执行 storageTagData 重新构建数据*/
 /* 注意这是本地数据结构, 主要用于 storageTagData内解析方法发生变化, 重新加载数据的, 与线上无关*/
@@ -83,7 +84,7 @@ export class TagDatabase {
             const fullKey = this.tagging.fullKey({ namespace, key });
             if (map[fullKey]) return;
 
-            const name = this.tagging.removePara(tag.name) || key;
+            const name = kanjiFixup(this.tagging.removePara(tag.name)) || key;
             const ehTag: TagItem = {
                 ns: this.tagging.ns(namespace),
                 key,
