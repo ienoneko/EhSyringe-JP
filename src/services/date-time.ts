@@ -67,7 +67,7 @@ export class DateTime {
         const now = new Date(nowTime);
         if (his.getFullYear() === now.getFullYear()) {
             if (his.getMonth() === now.getMonth() && his.getDate() === now.getDate()) {
-                return `今天 ${(withSecond ? timeWithSecondFormatter : timeFormatter).format(his)}`;
+                return `今日 ${(withSecond ? timeWithSecondFormatter : timeFormatter).format(his)}`;
             }
             return (withSecond ? noYearDateTimeWithSecondFormatter : noYearDateTimeFormatter).format(his);
         }
