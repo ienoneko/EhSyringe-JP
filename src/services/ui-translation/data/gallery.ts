@@ -132,7 +132,7 @@ merge(
         [/^\s*Add to Favorites\s*$/, ' 添加到收藏夹'],
         [/^Torrent Download \((\d+)\)$/, 'Torrent ダウンロード ($1)'],
         [/^, added (\d\d\d\d-\d\d-\d\d \d\d:\d\d)$/, '，更新于 $1'],
-        [/^Showing ([\d,]+) - ([\d,]+) of ([\d,]+) images?$/, '$1 - $2，共 $3 张图像'],
+        [/^Showing ([\d,]+) - ([\d,]+) of ([\d,]+) images?$/, '全体 $3 枚中、$1 - $2 番目の画像を表示しています'],
         [/^Page (\d+): /, '$1 ページ：'],
         [/^Page (\d+)$/, '$1 ページ'],
         [/^Posted on (\d\d \w+ \d\d\d\d, \d\d:\d\d) by:\s*$/, 'コメント時間：$1 \xA0名前：'],
